@@ -1,4 +1,4 @@
-package com.gabrielkadaaj.entities;
+package com.gabrielkadaaj.dslist.entities;
 
 import java.util.Objects;
 

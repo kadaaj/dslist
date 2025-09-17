@@ -3,7 +3,7 @@ package com.gabrielkadaaj.dslist.dto;
 import com.gabrielkadaaj.dslist.entities.Game;
 import org.springframework.beans.BeanUtils;
 
-public class GameDto {
+public class GameDTO {
 
     private Long id;
     private String title;
@@ -15,11 +15,11 @@ public class GameDto {
     private String shortDescription;
     private String longDescription;
 
-    public GameDto(){
+    public GameDTO(){
 
     }
 
-    public GameDto(Game entity){
+    public GameDTO(Game entity){
         BeanUtils.copyProperties(entity, this);
     }
 

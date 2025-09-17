@@ -2,7 +2,7 @@ package com.gabrielkadaaj.dslist.controllers;
 
 import java.util.List;
 
-import com.gabrielkadaaj.dslist.dto.GameDto;
+import com.gabrielkadaaj.dslist.dto.GameDTO;
 import com.gabrielkadaaj.dslist.dto.GameMinDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +20,8 @@ public class GameController {
     private GameService gameService;
 
     @GetMapping(value ="/{id}")
-    public GameDto findById(@PathVariable Long id) {
-        GameDto result = gameService.findById(id);
+    public GameDTO findById(@PathVariable Long id) {
+        GameDTO result = gameService.findById(id);
         return result;
     }
 

@@ -1,6 +1,6 @@
 package com.gabrielkadaaj.dslist.services;
 
-import com.gabrielkadaaj.dslist.dto.GameDto;
+import com.gabrielkadaaj.dslist.dto.GameDTO;
 import com.gabrielkadaaj.dslist.dto.GameMinDTO;
 import com.gabrielkadaaj.dslist.entities.Game;
 import com.gabrielkadaaj.dslist.projections.GameMinProjection;
@@ -18,9 +18,9 @@ public class GameService {
     private GameRepository gameRepository;
 
     @Transactional(readOnly = true)
-    public GameDto findById(Long id){
+    public GameDTO findById(Long id){
         Game result = gameRepository.findById(id).get();
-        return new GameDto(result);
+        return new GameDTO(result);
     }
 
     @Transactional(readOnly = true)
